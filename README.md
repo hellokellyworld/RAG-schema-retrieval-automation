@@ -9,7 +9,7 @@ Tech stack used includes LangChain, Pinecone, Typescript, Openai, and Next.js. L
 1. Clone the repo or download the ZIP
 
 ```
-git clone [github https url]
+git clone https://github.com/hellokellyworld/RAG-schema-retrieval-automation.git
 ```
 
 
