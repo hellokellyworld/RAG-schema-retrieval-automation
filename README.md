@@ -44,7 +44,7 @@ PINECONE_INDEX_NAME=
 
 Make sure you set the dimension size to be 1536 and use cosine similarity when creating index in Pinecone.
 
-4. In the `config` folder, replace the `PINECONE_NAME_SPACE` with a `namespace` where you'd like to store your embeddings on Pinecone when you run `npm run ingest`. This namespace will later be used for queries and retrieval.
+4. In the `config` folder, replace the `PINECONE_NAME_SPACE` with a `namespace` where you'd like to store your embeddings on Pinecone when you run `yarn run ingest`. This namespace will later be used for queries and retrieval.
 
 5. In `utils/makechain.ts` chain change the `QA_PROMPT` for your own usecase. Change `modelName` in `new OpenAI` to `gpt-4`, if you have access to `gpt-4` api. Please verify outside this repo that you have access to `gpt-4` api, otherwise the application will not work. For `gpt-4`, you will need to prepay OpenAI before you can activiate [it].(https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4)
 
@@ -54,13 +54,13 @@ Make sure you set the dimension size to be 1536 and use cosine similarity when c
 
 1. Inside `docs` folder, add your pdf files or folders that contain pdf files.
 
-2. Run the script `npm run ingest` to 'ingest' and embed your docs. If you run into errors troubleshoot below.
+2. Run the script `yarn run ingest` to 'ingest' and embed your docs. If you run into errors troubleshoot below.
 
 3. Check Pinecone dashboard to verify your namespace and vectors have been added.
 
 ## Run the app
 
-Once you've verified that the embeddings and content have been successfully added to your Pinecone, you can run the app `npm run dev` to launch the local dev environment, and then type a question in the chat interface.
+Once you've verified that the embeddings and content have been successfully added to your Pinecone, you can run the app `yarn start` to launch the local dev environment at http://localhost:8081 in browser, and then define fields to extract.
 
 ## Credit
 
