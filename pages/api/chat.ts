@@ -175,22 +175,16 @@ If the question is not related to the context, politely respond that you are tun
           const fieldName: string = fieldNameObj.field_name;
           const format_instructions =
             getFormatInstructionsWithoutRequiredField(schema);
-          const final_format_instructins = format_instructions.replaceAll(
+          const final_format_instructions = format_instructions.replaceAll(
             'PLACE_HOLDER_FOR_EQUIRED_FIELDS',
             fieldName,
           );
-          const finalQAPrompt = await COMPLEX_QA_PROMPT_TEMPLATE.format({
-            question: sanitizedQuestion,
-            context: 'EMPTY CONTEXT',
-            chat_history: [],
-            format_instructions: final_format_instructins,
-          });
 
           //then we go call the langchain to get the results
           const result = await qaFMChain.call({
             question: sanitizedQuestion,
             chat_history: [],
-            format_instructions: final_format_instructins,
+            format_instructions: final_format_instructions,
           }); //this should already have the answer formatted by the output parser
           const obj1 = result.text;
           for (var key in obj1) {
