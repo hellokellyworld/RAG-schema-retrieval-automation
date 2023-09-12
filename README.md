@@ -1,4 +1,4 @@
-# qa-chain-with-schema-based-output-parsing 
+# RAG-schema-retrieval-automation
 
 Fix Hallucination in Retrieval Augmented Generation AI Applications Using Schema and Output Parser
 
