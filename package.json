@@ -1,5 +1,5 @@
 {
-  "name": "qa-chain-with-schema-based-output-parsing",
+  "name": "RAG-schema-retrieval-automation",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
