@@ -60,7 +60,7 @@ Make sure you set the dimension size to be 1536 and use cosine similarity when c
 
 ## Run the app
 
-Once you've verified that the embeddings and content have been successfully added to your Pinecone, you can run the app `yarn start` to launch the local dev environment at http://localhost:8081 in browser, and then define fields to extract.
+Once you've verified that the embeddings and content have been successfully added to your Pinecone, you can build the app `yarn build`. Then, you can run the app `yarn start` to launch the local dev environment at http://localhost:8081 in browser, and then define fields to extract.
 
 ## Credit
 
