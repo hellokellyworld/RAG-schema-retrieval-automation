@@ -68,3 +68,5 @@ The source code was inspired by this project here [gpt4-pdf-chatbot-langchain](h
 
 Frontend of this repo is inspired by [langchain-chat-nextjs](https://github.com/zahidkhawaja/langchain-chat-nextjs)
 
+## Publication
+The article about this project can be read here [Fix Hallucination in Retrieval Augmented Generation AI Applications Using Schema and Output Parser](https://kelly-kang.medium.com/fix-hallucination-in-retrieval-augmented-generation-ai-applications-using-schema-and-output-parser-d58325daf1da).
